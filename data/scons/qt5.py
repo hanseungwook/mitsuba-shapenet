@@ -375,10 +375,10 @@ def enable_modules(self, modules, debug=False, crosscompiling=False) :
 
         # Dictionary changes between MacOS/Windows names and pkg-config names
         validModules = {
-                'QtCore': 'Qt5Core',
-                'QtGui': 'Qt5Gui',
-                'QtWidgets': 'Qt5Widgets',
-                'QtOpenGL': 'Qt5OpenGL',
+                'Qt5Core': 'Qt5Core',
+                'Qt5Gui': 'Qt5Gui',
+                'Qt5Widgets': 'Qt5Widgets',
+                'Qt5OpenGL': 'Qt5OpenGL',
                 # 'Qt3Support': 'Qt3Support', # removed in Qt5
                 # 'QtAssistant': 'QtAssistant', # deprecated in Qt5
                 # 'QtAssistantClient': 'QtAssistantClient', # deprecated in Qt5
@@ -387,10 +387,10 @@ def enable_modules(self, modules, debug=False, crosscompiling=False) :
                 # 'QtSvg': 'Qt5Svg', # unused
                 # The next modules have not been tested yet so, please
                 # maybe they require additional work on non Linux platforms
-                'QtNetwork': 'Qt5Network',
+                'Qt5Network': 'Qt5Network',
                 # 'QtTest': 'Qt5Test', # unused
-                'QtXml': 'Qt5Xml',
-                'QtXmlPatterns': 'Qt5XmlPatterns',
+                'Qt5Xml': 'Qt5Xml',
+                'Qt5XmlPatterns': 'Qt5XmlPatterns',
                 # 'QtUiTools': 'Qt5UiTools', # unused
                 # 'QtDesigner' : 'Qt5Designer', # unused
                 # 'QtDesignerComponents' : 'Qt5DesignerComponents', # unused
