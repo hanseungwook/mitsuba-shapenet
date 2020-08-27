@@ -164,7 +164,7 @@ public:
 		ref<FileResolver> fileResolver = Thread::getThread()->getFileResolver()->clone();
 		fs::path path = fileResolver->resolve(props.getString("filename"));
 
-		m_name = path.stem().string();
+		auto m_name = path.stem().string();
 
 		/* Object-space -> World-space transformation */
 		Transform objectToWorld = props.getTransform("toWorld", Transform());
